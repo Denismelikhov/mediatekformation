@@ -1,0 +1,20 @@
+{% extends "basefront.html.twig" %}
+
+{% block body %}
+    <h1>Modifier une formation</h1>
+
+    {{ form_start(formFormation) }}
+        {{ form_row(formFormation.publishedAt) }}
+        {{ form_row(formFormation.title) }}
+        {{ form_row(formFormation.description) }}
+        {{ form_row(formFormation.videoId) }}
+        {{ form_row(formFormation.playlist) }}
+        {{ form_row(formFormation.categories) }}
+
+        <button type="submit">Mettre à jour</button>
+    {{ form_end(formFormation) }}
+
+    <p>
+        <a href="{{ path('formation_index') }}">Retour à la liste</a>
+    </p>
+{% endblock %}

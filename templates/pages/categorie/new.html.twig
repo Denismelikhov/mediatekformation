@@ -1,0 +1,15 @@
+{% extends "basefront.html.twig" %}
+
+{% block body %}
+    <h1>Ajouter une catégorie</h1>
+
+    {{ form_start(formCategorie) }}
+        {{ form_row(formCategorie.name) }}
+
+        <button type="submit">Enregistrer</button>
+    {{ form_end(formCategorie) }}
+
+    <p>
+        <a href="{{ path('categorie_index') }}">Retour à la liste</a>
+    </p>
+{% endblock %}

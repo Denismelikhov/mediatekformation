@@ -1,0 +1,16 @@
+{% extends "basefront.html.twig" %}
+
+{% block body %}
+    <h1>Modifier une playlist</h1>
+
+    {{ form_start(formPlaylist) }}
+        {{ form_row(formPlaylist.name) }}
+        {{ form_row(formPlaylist.description) }}
+
+        <button type="submit">Mettre à jour</button>
+    {{ form_end(formPlaylist) }}
+
+    <p>
+        <a href="{{ path('playlist_index') }}">Retour à la liste</a>
+    </p>
+{% endblock %}
