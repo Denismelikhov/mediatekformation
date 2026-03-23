@@ -16,6 +16,15 @@
                         </div>
                     </form>                    
                 </th>
+                <th class="text-center align-top" scope="col">
+                    nombre de formations<br />
+                    <a href="{{ path('playlists.sort', {champ:'formations', ordre:'ASC'}) }}"
+                    class="btn btn-info btn-sm active"
+                    aria-label="Trier par nombre de formations croissant">&lt;</a>
+                    <a href="{{ path('playlists.sort', {champ:'formations', ordre:'DESC'}) }}"
+                    class="btn btn-info btn-sm active"
+                    aria-label="Trier par nombre de formations décroissant">&gt;</a>
+                </th>
                 <th class="text-left align-top" scope="col">
                     catégories
                     <form class="form-inline mt-1" method="POST" action="{{ path('playlists.findallcontain', {champ:'id', table:'categories'}) }}">
@@ -34,15 +43,6 @@
                 </th>
                 <th class="text-center align-top" scope="col">
                     &nbsp;
-                </th>
-                <th class="text-center align-top" scope="col">
-                    nb formations<br />
-                    <a href="{{ path('playlists.sort', {champ:'formations', ordre:'ASC'}) }}"
-                    class="btn btn-info btn-sm active"
-                    aria-label="Trier par nombre de formations croissant">&lt;</a>
-                    <a href="{{ path('playlists.sort', {champ:'formations', ordre:'DESC'}) }}"
-                    class="btn btn-info btn-sm active"
-                    aria-label="Trier par nombre de formations décroissant">&gt;</a>
                 </th>				
             </tr>
         </thead>
