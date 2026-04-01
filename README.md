@@ -15,6 +15,8 @@ Ce projet correspond à une amélioration de l'application **mediatekformation**
 
 L'application permet d'accéder à des vidéos d’auto-formation organisées en playlists, mais le travail réalisé a consisté à corriger, compléter et étendre les fonctionnalités existantes.
 
+<img width="2142" height="1317" alt="Screenshot 2026-04-01 170446" src="https://github.com/user-attachments/assets/3e7f87c7-c079-440d-9cf8-5d3169fe0c61" />
+
 ---
 
 ## Fonctionnalités ajoutées
@@ -33,6 +35,8 @@ Le code existant a été corrigé en suivant les recommandations de SonarLint :
 ### Ajout d'une fonctionnalité
 
 Ajout du **nombre de formations par playlist** :
+
+<img width="2129" height="1031" alt="Screenshot 2026-04-01 170829" src="https://github.com/user-attachments/assets/e46b1af4-f38b-4b0b-a012-2cc8d1b0b4db" />
 
 - affichage dans la page des playlists  
 - affichage dans le détail d’une playlist  
@@ -66,7 +70,10 @@ Développements réalisés :
 - création de contrôleurs Symfony dédiés  
 - création de formulaires (FormType)  
 - gestion des entités avec Doctrine  
-- création de vues Twig pour l’administration  
+- création de vues Twig pour l’administration
+
+<img width="2144" height="832" alt="Screenshot 2026-04-01 170508" src="https://github.com/user-attachments/assets/dd6d810f-93f2-414e-93da-d1b1a8df0689" />
+<img width="2145" height="893" alt="Screenshot 2026-04-01 170525" src="https://github.com/user-attachments/assets/532cd860-cdf1-478f-9211-4a030237c2d8" />
 
 ---
 
